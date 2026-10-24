@@ -4,8 +4,9 @@ const Navbar = () => {
   return (
     <div className="navbar p-4">
       <div className="navbar-start">
-        <a href="#" className="flex items-center gap-1 font-bold text-3xl">
-          <Flame />
+        <a href="#" 
+        className="flex items-center gap-1 font-bold text-3xl md:text-xl text-orange-400">
+          <Flame className="mr-2" />
           Fire Ninja
         </a>
       </div>
@@ -21,9 +22,9 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#"
-           className="btn btn-sm btn-ghost"
+          className="btn btn-sm btn-ghost"
 
-           >
+          >
             A propos
           </a>
         </li>

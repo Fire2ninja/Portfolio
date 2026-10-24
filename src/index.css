@@ -1,5 +1,19 @@
 @import "tailwindcss";
-@plugin "daisyui"{
-themes: light --default, dark --prefersdark, luxury;
+@plugin "daisyui" {
+  themes: all;
 }
 
+
+@theme {
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-twinkle: twinkle 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+}
